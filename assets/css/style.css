@@ -1,0 +1,62 @@
+.character {
+	padding: 10px;
+	float: left;
+	margin-right: 30px;
+	background-color: white;
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	margin-bottom: 10px;
+}
+
+body {
+	margin-left: 300px;
+	margin-right: 300px;
+	background-image: url("../images/hogwarts.jpg");
+}
+
+.img {
+	width: 150px;
+	height: 150px;
+}
+
+#h1 {
+	margin-bottom: 100px;
+	float: left;
+	height: 200px;
+	width: 70%;
+}
+
+.header {
+	background-color: white;
+	border-width: 2px;
+	border-style: solid;
+	border-color: grey;
+	float: left;
+	padding: 10px;
+	font-size: 24px;
+}
+
+#winCounter {
+	padding-top: 0px;
+	padding-bottom: 2px;
+	margin-bottom: 50px;
+}
+
+#lossCounter {
+	padding-top: 0px;
+	padding-bottom: 2px;
+	margin-bottom: 50px;
+}
+
+button {
+	background-color: white;
+	border-color: grey;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 20px;
+}
