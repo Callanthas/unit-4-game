@@ -1,28 +1,28 @@
 var characterList = [	{
 	HP: 100,
 	Attack: 8,
-	Image: "<img class='img' src='images/harry.jpg' alt='Harry Potter'>",
+	Image: "<img class='img' src='assets/images/harry.jpg' alt='Harry Potter'>",
 	Name: "Harry Potter"
 	},
 
 	{
 	HP: 150,
 	Attack: 14,
-	Image: "<img class='img' src='images/dumbledore.jpg' alt='Albus Dumbledore'>",
+	Image: "<img class='img' src='assets/images/dumbledore.jpg' alt='Albus Dumbledore'>",
 	Name: "Albus Dumbledore"
 	},
 
 	{
 	HP: 180,
 	Attack: 12,
-	Image: "<img class='img' src='voldemort.png' alt='Lord Voldemort'>",
+	Image: "<img class='img' src='assets/images/voldemort.png' alt='Lord Voldemort'>",
 	Name: "Lord Voldemort"
 	},	
 
 	{
 	HP: 120,
 	Attack: 10,
-	Image: "<img class='img' src='images/snape.jpg' alt='Severus Snape'>",
+	Image: "<img class='img' src='assets/images/snape.jpg' alt='Severus Snape'>",
 	Name: "Severus Snape"
 	},
 ];
@@ -64,9 +64,9 @@ startGame();
 
 $("#char-init").on("click", ".character", function() { 
 
-	var curChosen = $('#the_chosen_one').children();
-	console.log(curChosen);
-	$("#char-init").append(curChosen);
+	var charChosen = $('#the_chosen_one').children();
+	console.log(charChosen);
+	$("#char-init").append(charChosen);
 
 	var characterPicked = $(this);
 	$("#the_chosen_one").append(characterPicked);
@@ -116,7 +116,7 @@ if (!attackLock) {
 	$('#dHChange').html(defenderLife);
 
 	if (clicks >= 1) {
-		var attackerPower = (Math.ceil ($('#attacker').attr("data-attack") * 1.2));
+		var attackerPower = (Math.ceil ($('#attacker').attr("data-attack") * 1.5));
 		$('#attacker').attr("data-attack", attackerPower);
 		$('#aPChange').html(attackerPower);
 	}
